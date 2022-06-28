@@ -1,7 +1,6 @@
 import json
 from flask import Flask, jsonify, render_template, request
 
-
 app = Flask(__name__)
 
 databaseFile = open('database.json')
