@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EServer Cords!!</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <form class="container d-flex justify-content-center gap-5 mt-2">
+      <input
+        class="form-control"
+        id="name-input"
+        type="text"
+        placeholder="Place Name"
+        required
+      />
+      <input
+        class="form-control"
+        id="cords-input"
+        type="text"
+        placeholder="Cords"
+        required
+      />
+      <button type="submit" class="btn btn-primary px-5">Add</button>
+    </form>
+    <div class="p-5 mt-1">
+      <table class="table text-light">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Cords</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

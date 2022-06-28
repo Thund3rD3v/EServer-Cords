@@ -1,0 +1,21 @@
+body {
+  animation: fadein 2750ms;
+}
+
+#name-input {
+  width: 45%;
+}
+
+#cords-input {
+  width: 15%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
